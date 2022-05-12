@@ -1,0 +1,12 @@
+name: "Hello World"
+on:
+  push:
+    jobs:
+    name: a job to say hello world
+    runs-on: ubuntu-latest
+    
+    steps:
+      -uses:actions/checkout@v3
+      -run: |
+      
+      echo "Hello World"
