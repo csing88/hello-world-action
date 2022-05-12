@@ -13,12 +13,13 @@
 
 # echo "Hello World"
 
-name: hello-world
+name: A job to run Hello World
+
 on: push
 jobs:
-  build:
-       runs-on: ubuntu-latest
-         steps:
-              -uses:actions/checkout@v3
-              -run:| 
-               echo "Hello World!
+    build:
+     runs-on: ubuntu-latest 
+     steps:
+      - uses: actions/checkout@v3
+          -run:|
+         echo "Hello World"
