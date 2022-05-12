@@ -1,14 +1,23 @@
-on: [push]
+# on: [push]
 
+# jobs:
+# hello_world_job:
+# runs-on: ubuntu-latest
+# name: A job to say hello
+
+# steps:
+
+# - uses: actions/checkout@v3
+
+# - run: |
+
+# echo "Hello World"
+
+name: hello-world
+on: push
 jobs:
-hello_world_job:
-runs-on: ubuntu-latest
-name: A job to say hello
-
-steps:
-
-- uses: actions/checkout@v3
-
-- run: |
-
-echo "Hello World"
+  my-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: my-step
+        run: echo "Hello World!
