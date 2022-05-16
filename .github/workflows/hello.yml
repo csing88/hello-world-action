@@ -6,5 +6,17 @@ jobs:
      runs-on: ubuntu-latest 
      steps:
      - uses: actions/checkout@v2.4.2
+     - name: Greeting People
      - run: |
            echo "Hello World"
+           
+    docker:
+        uses: csing88/hello/.github/workflows/main.yml@main
+        with:
+          image_name: my_awsome_app
+          
+        secrets:
+           registry_username: ${{secrets.REGISTRY_USERNAME}}
+           registry_password: ${{secrets.REGISTRY_PASSWORD}}
+          
+           
