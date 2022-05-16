@@ -10,12 +10,12 @@ jobs:
      - run: |
            echo "Hello World"
            
-    docker:
-        uses: csing88/hello/.github/workflows/main.yml@main
-        with:
-          image_name: my_awsome_app
+    job_2:
+      uses: csing88/hello/.github/workflows/main.yml@main
+      with:
+        image_name: my_awsome_app
           
-        secrets:
+      secrets:
              registry_username: abc
              register_password: abc123
 #            registry_username: ${{secrets.REGISTRY_USERNAME}}
