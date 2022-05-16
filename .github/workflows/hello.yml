@@ -16,7 +16,9 @@ jobs:
           image_name: my_awsome_app
           
         secrets:
-           registry_username: ${{secrets.REGISTRY_USERNAME}}
-           registry_password: ${{secrets.REGISTRY_PASSWORD}}
+             registry_username: abc
+             register_password: abc123
+#            registry_username: ${{secrets.REGISTRY_USERNAME}}
+#            registry_password: ${{secrets.REGISTRY_PASSWORD}}
           
            
